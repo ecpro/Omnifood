@@ -28,14 +28,44 @@ html {
 
 /* ------heading----- */
 
-h1 {
-    margin : 0;
-    color: #fff;
-    font-size: 240%;
+h1,h2,h3 {
+    margin: 0;
     font-weight: 300; /* headers have usally more default weight */
     letter-spacing: 1px;
-    word-spacing: 10px;
     padding-bottom: 10px;
+    line-height: 145%;
+}
+
+h1 {
+    font-size: 240%;
+    word-spacing: 10px;  
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    word-spacing: 1px;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.icon-big {
+    color : #f39c12;
+    font-size: 350%;
+    text-align: center;
+    padding: 20px;
 }
 
 /* ------ buttons ----- */
@@ -76,6 +106,10 @@ h1 {
 /* ---------------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------------- */
+
+.hero-text {
+    color: #fff;
+}
 
 header {
     background-image: linear-gradient(rgba(0,0,0, 0.8),rgba(0,0,0,0.8)) , url(img/hero.jpg);
@@ -130,4 +164,24 @@ nav {
     border-bottom: 2px solid #f39c12;
     padding-bottom: 5px;
     border-radius: 5px;   
+}
+
+/* ---------------------------------------------------- */
+/* FEATURE SECTION */
+/* ---------------------------------------------------- */
+.feature-head {
+    text-align: center;
+}
+
+.feature-head > h2:after {
+    width : 20%;
+    margin: 20px auto;
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: #f39c12;
+}
+
+.box {
+    padding: 10px 10px;
 }
