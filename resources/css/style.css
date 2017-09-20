@@ -123,8 +123,6 @@ nav {
     text-decoration: none;
     margin-left : 15px;
     font-size: 110%;
-    transition: border-bottom 0.3s;
-    
 }
 
 .navbar-list a:hover,
