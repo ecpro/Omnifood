@@ -1,0 +1,104 @@
+/* ---------------------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #efefef;
+    color: #555;
+    font-family: 'Lato', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ---------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin : 0 auto;   
+}
+
+/* ------heading----- */
+
+h1 {
+    margin : 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300; /* headers have usally more default weight */
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    padding-bottom: 10px;
+}
+
+/* ------ buttons ----- */
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 10px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    border: 1px solid #f39c12;
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+   border : 1px solid #f39c12;
+   color: #f39c12;
+}
+
+.btn:hover, 
+.btn:active {
+    background-color: #d8890b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #f39c12;
+    color: #fff;
+}   
+
+/* ---------------------------------------------------- */
+/* HEADER */
+/* ---------------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0,0,0, 0.8),rgba(0,0,0,0.8)) , url(img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+li {
+    list-style: none;
+}
+
