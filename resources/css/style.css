@@ -17,6 +17,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ---------------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ---------------------------------------------------- */
@@ -62,6 +71,7 @@ p {
 }
 
 .icon-big {
+    display: block;
     color : #f39c12;
     font-size: 350%;
     text-align: center;
@@ -102,6 +112,11 @@ p {
     border: 1px solid #f39c12;
     color: #fff;
 }   
+
+.list-inline > li {
+    display: inline-block;
+    list-style: none;
+}
 
 /* ---------------------------------------------------- */
 /* HEADER */
@@ -146,10 +161,6 @@ nav {
     margin-top: 30px; 
 }
 
-.navbar-list li {
-    display: inline-block;
-}
-
 .navbar-list a:link,
 .navbar-list a:visited {
     border-bottom : 2px transparent #f39c12;
@@ -173,6 +184,10 @@ nav {
     text-align: center;
 }
 
+.feature-head > h2 {
+    text-transform: uppercase;
+}
+
 .feature-head > h2:after {
     width : 20%;
     margin: 20px auto;
@@ -184,4 +199,45 @@ nav {
 
 .box {
     padding: 10px 10px;
+    text-align: justify;
 }
+
+#feature-title {
+    width : 75%;
+    margin : 0 auto;
+}
+
+/* ---------------------------------------------------- */
+/* MEALS SECTION */
+/* ---------------------------------------------------- */
+
+
+.meals-showcase {
+    width: 100%; 
+}
+
+.meals-showcase  li {
+    width: 25%;
+    float: left;
+}
+
+.meal-pic {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-pic img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-pic img:hover {
+    opacity: 1;
+    transform: scale(1.07);
+}
+
