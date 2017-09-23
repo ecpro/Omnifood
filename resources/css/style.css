@@ -16,10 +16,10 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
-
+/* clearfix is applied to parent of floating child element clear floats after the last child */
 .clearfix {zoom: 1;}
 .clearfix:after {
-    content: '.';
+    content: ' ';
     clear: both;
     display: block;
     height: 0;
@@ -61,7 +61,6 @@ h3 {
 }
 
 section {
-    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -118,6 +117,23 @@ p {
     list-style: none;
 }
 
+.section-title {
+    text-transform: uppercase;
+}
+
+.section-title:after {
+    width : 20%;
+    margin: 20px auto;
+    display: block;
+    content: "";
+    height: 2px;
+    background-color: #f39c12;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* ---------------------------------------------------- */
 /* HEADER */
 /* ---------------------------------------------------- */
@@ -132,6 +148,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    margin-bottom: 60px;
 }
 
 .hero-text-box {
@@ -180,29 +197,13 @@ nav {
 /* ---------------------------------------------------- */
 /* FEATURE SECTION */
 /* ---------------------------------------------------- */
-.feature-head {
-    text-align: center;
-}
-
-.feature-head > h2 {
-    text-transform: uppercase;
-}
-
-.feature-head > h2:after {
-    width : 20%;
-    margin: 20px auto;
-    display: block;
-    content: "";
-    height: 2px;
-    background-color: #f39c12;
-}
 
 .box {
     padding: 10px 10px;
     text-align: justify;
 }
 
-#feature-title {
+.title-desc {
     width : 75%;
     margin : 0 auto;
 }
@@ -241,3 +242,50 @@ nav {
     transform: scale(1.07);
 }
 
+/* ---------------------------------------------------- */
+/* HOW-IT-WORKS SECTION */
+/* ---------------------------------------------------- */
+
+.step-box {
+    margin-top: 30px;
+}
+
+.step-box:first-child {
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.step-box:last-child {
+    margin-top : 50px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.work-step {
+    margin-bottom: 40px;
+    font-size: 120%;
+}
+
+.work-step div {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    float : left;
+    margin-right: 20px;
+    padding: 10px;
+    border : 2px solid #f39c12;
+    border-radius: 50%;
+}
+
+.app-button {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.app-button img {
+    height: 50px;
+    width: auto;
+}
