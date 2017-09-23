@@ -61,7 +61,7 @@ h3 {
 }
 
 section {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 p {
@@ -288,4 +288,52 @@ nav {
 .app-button img {
     height: 50px;
     width: auto;
+}
+
+/* ---------------------------------------------------- */
+/* HOW-IT-WORKS SECTION */
+/* ---------------------------------------------------- */
+
+.cities-section {
+    background-color: #fff;
+    padding-top : 30px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.image-thumbnail {
+    width : 100%;
+}
+
+.city-desc {
+    width: 100%;
+}
+.city-desc ul {
+    list-style: none;
+}
+
+.city-desc h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.city-desc li {
+    margin-top: 10px;
+}
+
+.city-desc li:last-of-type {
+    padding-bottom: 15px;
+}
+
+.icon-small {
+    font-size: 180%;
+    margin-right: 10px;
+    color: #f39c12;
+}
+
+.city-desc a:link,
+.city-desc a:visited {
+    color: #f39c12;
 }
