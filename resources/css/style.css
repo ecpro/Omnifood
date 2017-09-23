@@ -300,6 +300,7 @@ nav {
     padding-bottom: 60px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 0;
 }
 
 .image-thumbnail {
@@ -336,4 +337,44 @@ nav {
 .city-desc a:link,
 .city-desc a:visited {
     color: #f39c12;
+}
+
+/* ---------------------------------------------------- */
+/* TESTIMONIALS */
+/* ---------------------------------------------------- */
+
+.section-testimonial {
+    background-image:linear-gradient(rgba(0,0,0, 0.8),rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px 0;
+    color: #fff;
+}
+
+blockquote {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    display: block;
+    font-style: italic;
+    line-height: 150%;
+}
+
+cite {
+    display: block;
+    padding : 10px;
+    font-size: 90%;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 300%;
+}
+
+cite img {
+    border-radius: 50%;
+    width : 15%;
+    margin-right: 10px;
+    vertical-align: middle;
 }
