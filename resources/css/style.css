@@ -291,7 +291,7 @@ nav {
 }
 
 /* ---------------------------------------------------- */
-/* HOW-IT-WORKS SECTION */
+/* CITIES SECTION */
 /* ---------------------------------------------------- */
 
 .cities-section {
@@ -329,7 +329,7 @@ nav {
 }
 
 .icon-small {
-    font-size: 180%;
+    font-size: 150%;
     margin-right: 10px;
     color: #f39c12;
 }
@@ -377,4 +377,57 @@ cite img {
     width : 15%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+
+/* ---------------------------------------------------- */
+/* SIGNUP AND PRICING PLANS */
+/* ---------------------------------------------------- */
+
+.section-signup {
+    padding-bottom: 30px;
+}
+
+.plan-well {
+    display: block;
+    width: 90%;
+    background-color: #fff;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 2px #bbb;
+}
+
+.plan-well h3 {
+    text-transform: uppercase;
+}
+
+.plan-well div {
+    border-bottom: 1px solid #bbb;
+    padding: 20px 10px;
+}
+
+.plan-well div:first-child {
+    background-color: #fefbf4;
+}
+
+.plan-well div:last-child {
+    text-align: center;
+    border-bottom: none;
+}
+
+.plan-desc ul {
+    list-style: none;
+}
+
+.plan-price {
+    font-size: 300%;
+    font-weight: 200;
+    color: #f39c12;
+}
+
+.plan-price span {
+    font-size: 40%;
 }
