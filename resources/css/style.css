@@ -461,20 +461,38 @@ textarea {
 
 input[type=text],
 input[type=email],
-select,
+select,optgroup,
 textarea {
     height: 35px;
     border: 1px solid #ccc;
+    padding: 5px;
     border-radius: 5px;
-    vertical-align: middle;
+    color: inherit;
+    font: inherit;
 }
+
+input[type=text],
+input[type=email],
+input[type=submit],
+select,optgroup,option,
+textarea {
+    color: inherit;
+    font: inherit;
+}
+
 
 textarea {
     height: 100px;
 }
 
-input:placeholder {
-    margin: 10px;
-}
-
 *:focus { outline: none;}
+
+
+/* ---------------------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    color: #999;
+}
