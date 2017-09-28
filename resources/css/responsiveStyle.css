@@ -1,0 +1,43 @@
+
+/* large screen size */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .navbar {
+        padding: 0 2%;
+    }
+}
+
+/* large tab */
+@media only screen and (max-width: 1023px) {
+        body {
+        font-size: 16px;
+    }
+
+    .logo {
+    height: 80px;
+    width: auto;
+    }
+
+    .navbar {
+        padding : 0 2%;
+    }
+
+    .row {
+        padding: 0 2%;
+    }
+
+}
+
+/* small tab */
+@media only screen and (max-width: 760px) {
+
+}
+
+/* mobile phones */
+@media only screen and (max-width: 480px) {
+
+}
