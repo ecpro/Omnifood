@@ -168,13 +168,24 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.logo {
-    height: 100px;
+.logo-white {
+    height: 80px;
     width: auto;
+    vertical-align: middle;
 }
 
+.logo-black {
+    display: none;
+}
 nav {
-   padding-top: 20px; 
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px; 
+}
+
+.navbar {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .navbar-brand {
@@ -184,7 +195,7 @@ nav {
 .navbar-list {
     float : right;
     list-style: none;
-    margin-top: 30px; 
+    margin-top: 35px; 
 }
 
 .navbar-list a:link,
@@ -199,8 +210,54 @@ nav {
 .navbar-list a:hover,
 .navbar-list a:active {
     border-bottom: 2px solid #f39c12;
-    padding-bottom: 5px;
-    border-radius: 5px;   
+    padding-bottom: 5px;  
+}
+
+/* ------- sticky navigation ---------- */
+
+.sticky.navbar{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5% 0 5%;
+    z-index: 9999;
+    box-shadow: 0px 1px 4px #767676;
+}
+
+.sticky .navbar-list {
+    margin-top: 20px;
+}
+
+.sticky .logo-white {
+    display: none;
+} 
+
+.sticky .logo-black {
+    margin: 4px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sticky {
+    background-color: #f2f2f2;
+}
+
+.sticky .navbar-list a:link,
+.sticky .navbar-list a:visited {
+    border-bottom : 2px transparent #f39c12;
+    color: #121212;
+    text-decoration: none;
+    margin-left : 15px;
+    font-size: 110%;
+}
+
+.sticky .navbar-list a:hover,
+.sticky .navbar-list a:active {
+    border-bottom: 4px solid #f39c12;
+    padding-bottom: 10px;   
 }
 
 /* ---------------------------------------------------- */
