@@ -17,27 +17,47 @@
         font-size: 16px;
     }
 
-    .logo {
-    height: 80px;
-    width: auto;
-    }
-
-    .navbar {
-        padding : 0 2%;
-    }
-
-    .row {
-        padding: 0 2%;
-    }
-
 }
 
 /* small tab */
 @media only screen and (max-width: 760px) {
 
+
 }
 
 /* mobile phones */
 @media only screen and (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
 
+    .hero-text-box h1 {
+        font-size: 140%;
+    }
+
+    .step-box:first-child {
+    margin-top: 30px;
+    text-align: center;
+    }
+
+    .app-button {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 0 30px;
+    }
+
+    .app-button img {
+    display: block;
+    height: auto;
+    width: 50%;
+    margin: 10px auto;
+    
+    }
+
+    .work-step {
+    padding: 5%;
+    margin-bottom: 40px;
+    font-size: 120%;
+    }
 }
