@@ -21,8 +21,9 @@
 
 /* small tab */
 @media only screen and (max-width: 760px) {
-
-
+    .contact-form {
+        width: 90%;
+    }
 }
 
 /* mobile phones */
@@ -59,5 +60,9 @@
     padding: 5%;
     margin-bottom: 40px;
     font-size: 120%;
+    }
+
+    .contact-form .row .col {
+        margin-top: 10px;
     }
 }
