@@ -15,6 +15,7 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow: hidden;
 }
 /* clearfix is applied to parent of floating child element clear floats after the last child */
 .clearfix {zoom: 1;}
