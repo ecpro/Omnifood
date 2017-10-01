@@ -15,7 +15,6 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow: hidden;
 }
 /* clearfix is applied to parent of floating child element clear floats after the last child */
 .clearfix {zoom: 1;}
@@ -26,6 +25,8 @@ html {
     height: 0;
     visibility: hidden;
 }
+
+
 
 /* ---------------------------------------------------- */
 /* REUSABLE COMPONENTS */
@@ -608,6 +609,6 @@ footer {
 .js--wp-1.animated,
 .js--wp-2.animated,
 .js--wp-3.animated,
-.js--wp-4.animated {
+.js--wp-5.animated {
     opacity: 1;
 }
