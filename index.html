@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./vendor/css/normalize.css">
     <link rel="stylesheet" href="./vendor/css/grid.css">
     <link rel="stylesheet" href="./vendor/css/ionicons.min.css">
+    <link rel="stylesheet" href="./vendor/css/animate.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/responsiveStyle.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
@@ -43,9 +44,9 @@
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1 class="hero-text">Goodbye Junk Food. <br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#sec-how-it-works">I am hungry!</a>
-            <a class="btn btn-ghost" href="#sec-meals">Show me more</a>
+            <h1 class="hero-text"></h1>
+            <a class="btn btn-full js--wp-5" href="#sec-how-it-works">I am hungry!</a>
+            <a class="btn btn-ghost js--wp-5" href="#sec-meals">Show me more</a>
         </div>
     </header>
     <!-- ------------------------------------ FEATURE SECTION --------------------------------------------- -->
@@ -56,7 +57,7 @@
                 <p class="title-desc">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking.
                     So let us take care of that, we’re really good at it, we promise!</p>
             </div>
-            <div class="feature-cols row">
+            <div class="feature-cols row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <div class="icon-big">
                         <i class="ion-ios-infinite"></i>
@@ -170,7 +171,7 @@
             <h2 class="section-title">How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-2 step-box">
+            <div class="col span-1-of-2 step-box js--wp-2">
                 <img src="./resources/img/app-iPhone.png" alt="Omnifood iphone app image" class="app-screen">
             </div>
             <div class="col span-1-of-2 steps step-box">
@@ -197,7 +198,7 @@
             <h2 class="section-title">We're currently in these cities</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-3">
                 <img src="./resources/img/lisbon-3.jpg" alt="lisbon photo" class="image-thumbnail">
                 <div class="city-desc">
                     <h3 class="">Lisbon</h3>
@@ -208,7 +209,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-3">
                 <img src="./resources/img/berlin.jpg" alt="berlin photo" class="image-thumbnail">
                 <div class="city-desc">
                     <h3 class="">Berlin</h3>
@@ -219,7 +220,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-3">
                 <img src="./resources/img/london.jpg" alt="london photo" class="image-thumbnail">
                 <div class="city-desc">
                     <h3 class="">London</h3>
@@ -230,7 +231,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col span-1-of-4">
+            <div class="col span-1-of-4 js--wp-3">
                 <img src="./resources/img/san-francisco.jpg" alt="sam-franscisco photo" class="image-thumbnail">
                 <div class="city-desc">
                     <h3 class="">San Francisco</h3>
@@ -278,7 +279,7 @@
             <h2 class="section-title text-center">Start eating healthy today</h2>
         </div>
         <div class="row">
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-3 js--wp-4">
                 <div class="plan-well">
                     <div>
                         <h3 class="plan-name">Premium</h3>
@@ -423,6 +424,29 @@
 </body>
 <script src="./vendor/js/jquery-3.2.1.js"></script>
 <script src="./vendor/js/jquery.waypoints.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 <script src="./resources/js/main.js"></script>
-
+<script>
+    $('.hero-text').typeIt({
+     speed: 60,
+     autoStart: false
+})
+.tiPause(500)
+.tiType('Hey you!')
+.tiPause(1000)
+.tiDelete()
+.tiType('<small>Yes I am talking to you. Dumbass!</small>')
+.tiPause(1000)
+.tiDelete()
+.tiType('<small>Still eating junk food...</small>')
+.tiPause(400)
+.tiBreak()
+.tiType('<small>Such an idiot you are!</small>')
+.tiPause(600)
+.tiDelete()
+.tiType('Say bye to Junk Food.')
+.tiBreak()
+.tiType('Hello super healthy meals.');
+</script>
+    
 </html>
