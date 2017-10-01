@@ -73,7 +73,7 @@ $(document).ready(function () {
 
         setTimeout(function() {
             $('.js--wp-5').addClass('animated pulse');
-        }, 14000);
+        }, 14500);
 
 
 }); 
