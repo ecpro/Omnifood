@@ -6,17 +6,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    //overflow-x: hidden;
 }
 
 
-html {
+html,body {
     background-color: #f7f7f7;
     color: #555;
     font-family: 'Lato', 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 /* clearfix is applied to parent of floating child element clear floats after the last child */
 .clearfix {zoom: 1;}
