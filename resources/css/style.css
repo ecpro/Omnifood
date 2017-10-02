@@ -6,8 +6,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
+
 
 html {
     background-color: #f7f7f7;
@@ -219,7 +220,6 @@ nav {
 /* ------- sticky navigation ---------- */
 
 .sticky.navbar{
-    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -262,6 +262,7 @@ nav {
     border-bottom: 4px solid #f39c12;
     padding-bottom: 10px;   
 }
+
 
 /* ---------------------------------------------------- */
 /* FEATURE SECTION */
@@ -357,6 +358,10 @@ nav {
 .app-button img {
     height: 50px;
     width: auto;
+}
+
+.mobile-nav-icon {
+    display: none;
 }
 
 /* ---------------------------------------------------- */

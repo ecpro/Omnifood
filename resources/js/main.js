@@ -53,27 +53,41 @@ $(document).ready(function () {
             }
         });
 
-        /* animations */
+    /* animations */
 
-        $('.js--wp-1').waypoint(function(direction) {
-             $('.js--wp-1').addClass('animated fadeIn');
-        }, { offset : '50%' });
+    $('.js--wp-1').waypoint(function (direction) {
+        $('.js--wp-1').addClass('animated fadeIn');
+    }, { offset: '50%' });
 
-        $('.js--wp-2').waypoint(function(direction) {
-             $('.js--wp-2').addClass('animated fadeInUp');
-        }, { offset : '50%' });
+    $('.js--wp-2').waypoint(function (direction) {
+        $('.js--wp-2').addClass('animated fadeInUp');
+    }, { offset: '50%' });
 
-        $('.js--wp-3').waypoint(function(direction) {
-             $('.js--wp-3').addClass('animated zoomIn');
-        }, { offset : '50%' });
+    $('.js--wp-3').waypoint(function (direction) {
+        $('.js--wp-3').addClass('animated zoomIn');
+    }, { offset: '50%' });
 
-        $('.js--wp-4').waypoint(function(direction) {
-             $('.js--wp-4').addClass('animated pulse');
-        }, { offset : '50%' });
+    $('.js--wp-4').waypoint(function (direction) {
+        $('.js--wp-4').addClass('animated pulse');
+    }, { offset: '50%' });
 
-        setTimeout(function() {
-            $('.js--wp-5').addClass('animated pulse');
-        }, 14500);
+    setTimeout(function () {
+        $('.js--wp-5').addClass('animated pulse');
+    }, 14500);
 
+    $('.mobile-nav-icon').on('click', function (event) {
+        event.preventDefault();
+        if ($('.mobile-nav-icon i').hasClass('ion-navicon-round')) {
+            $('.mobile-nav-icon i').removeClass('ion-navicon-round');
+            $('.mobile-nav-icon i').addClass('ion-close');
+            $('.navbar-list .list-inline').removeClass('mobile-list');
+        }
+        else {
+            $('.mobile-nav-icon i').addClass('ion-navicon-round');
+            $('.mobile-nav-icon i').removeClass('ion-close');
+            $('.navbar-list .list-inline').addClass('mobile-list');
+        }
+        
+    })
 
 }); 
